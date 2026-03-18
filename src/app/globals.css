@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Set the initial base colors using our custom values */
+  --background: #E5D7C4; /* Using 'bone' from img_1 as our fresh daily base */
+  --foreground: #0B272A; /* Using 'deepSpace' from img_3 for text */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* This KILLS the scrollbar forever */
+  background-color: #0B272A; /* Deep Space background */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif; /* We will upgrade this font later */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
